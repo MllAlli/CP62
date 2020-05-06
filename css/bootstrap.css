@@ -2,10 +2,27 @@
     margin-top: 12vh;
     margin-bottom: 2vh;
     padding: 3vh;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 0.9em;
+    font-family: 'Pridi', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7;
     color: #202224;
     display: inline-block;
+}
+
+.pad {
+    margin-top: 12vh;
+    margin-bottom: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.format {
+    font-family: 'Pridi', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #202224;
 }
 
 hr.line1 {
@@ -20,10 +37,23 @@ hr.line3 {
     border-top: 2px solid #7E6698;
 }
 
+hr.line4 {
+    border-top: 2px solid #7FB6A1;
+}
+
 .topic {
+    font-family: 'Pridi', serif;
     font-weight: 600;
     margin-bottom: 0.8em;
     color: #202224;
+}
+
+.topicpage {
+    font-family: 'Pridi', serif;
+    font-weight: 600;
+    font-size: 3.5em;
+    color: #202224;
+    padding: 6vh 5vh 0vh 5vh;
 }
 
 #topic1:hover {
@@ -38,6 +68,10 @@ hr.line3 {
     color: #7FB6A1;
 }
 
+#topic4:hover {
+    color: #55D9D6;
+}
+
 p#maintopic {
     color: #202224;
     padding: 0vh 5vh 0vh 5vh;
@@ -48,10 +82,10 @@ p#maintopic {
 
 p#undertopic {
     color: #202224;
-    padding: 0vh 5vh;
-    font-size: 1.3em;
-    font-family: 'Source Code Pro', monospace;
-    display: block;
+    padding: 0vh 5vh 0vh 5vh;
+    margin-top: 7vh;
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5em;
 }
 
 #menu {
@@ -60,16 +94,15 @@ p#undertopic {
 
 .menulist {
     color: #202224;
-    font-size: 1.2em;
-    margin: auto;
-    font-family: 'Source Code Pro', monospace;
+    font-size: 1.25em;
+    font-family: 'Pridi', serif;
 }
 
 .menulist:hover {
     color: #fff;
-    padding: 0px 0px 0px 12px;
+    padding: 0px 3px 0px 12px;
     box-shadow: 5px 5px #DFDFDF;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -85,13 +118,12 @@ p#undertopic {
     background-color: #7FB6A1;
 }
 
-img#pic1:hover {
-    transform: translateY(-10px);
-    transition: 1s;
+#menulist4:hover {
+    background-color: #55D9D6;
 }
 
-img#pic2 {
-    margin-bottom: 20px;
+img#pic1 {
+    padding: 5px;
 }
 
 .text-decoration-none {
@@ -99,7 +131,8 @@ img#pic2 {
 }
 
 a.mainmenu {
-    font-size: 1.2em;
+    margin: 5px 0px 0px 5px;
+    font-size: 1.1em;
     font-weight: 600;
 }
 
@@ -118,6 +151,11 @@ a.mainmenu {
     transition: 0.2s;
 }
 
+#menu4:hover {
+    transform: translateX(3px);
+    transition: 0.2s;
+}
+
 #menu1 {
     color: #FB836B;
 }
@@ -128,6 +166,76 @@ a.mainmenu {
 
 #menu3 {
     color: #7FB6A1;
+}
+
+#menu4 {
+    color: #55D9D6;
+}
+
+.bg-green {
+    background-color: #7FB6A1 !important;
+}
+
+.border-green {
+    border-color: #7FB6A1 !important;
+}
+
+.text-green {
+    color: #7FB6A1 !important;
+}
+
+.bg-purple {
+    background-color: #7E6698 !important;
+}
+
+.bg-light-purple {
+    background-color: #F4F1FA !important;
+}
+
+.border-purple {
+    border-color: #7E6698 !important;
+}
+
+.text-purple {
+    color: #7E6698 !important;
+}
+
+.bg-blue {
+    background-color: #55D9D6 !important;
+}
+
+.bg-light-blue {
+    background-color: #ECF6F5 !important;
+}
+
+.border-blue {
+    border-color: #55D9D6 !important;
+}
+
+.text-blue {
+    color: #2CB8B7 !important;
+}
+
+.bg-orange {
+    background-color: #FB836B !important;
+}
+
+.border-orange {
+    border-color: #FB836B !important;
+}
+
+.text-orange {
+    color: #FB836B !important;
+}
+
+p#subtitle {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.3em;
+}
+
+p#detail {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.75em;
 }
 
 
@@ -6584,23 +6692,23 @@ button.bg-dark:focus {
 }
 
 .border {
-    border: 1px solid #dee2e6 !important;
+    border: 2px solid #dee2e6 !important;
 }
 
 .border-top {
-    border-top: 1px solid #dee2e6 !important;
+    border-top: 2px solid #dee2e6 !important;
 }
 
 .border-right {
-    border-right: 1px solid #dee2e6 !important;
+    border-right: 2px solid #dee2e6 !important;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 2px solid #dee2e6 !important;
 }
 
 .border-left {
-    border-left: 1px solid #dee2e6 !important;
+    border-left: 2px solid #dee2e6 !important;
 }
 
 .border-0 {

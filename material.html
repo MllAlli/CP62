@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Self Watering System | อุปกรณ์</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;500;600&family=Source+Code+Pro:wght@500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="menu">
+            <a href="index.html" class="text-decoration-none">
+                <p id="undertopic">Self Watering System</p>
+            </a>
+        </div>
+        <div class="row">
+            <h1 class="topicpage"># อุปกรณ์</h1>
+        </div>
+
+        <div class="box">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-green mb-3" id="soil">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>Soil Moisture Sensor</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/di0a79.png" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Soil Moisture Sensor แบ่งเป็นส่วนดังนี้
+                                </li>
+                                <li class="list-group-item">
+                                    1. โมดูลวัดและประมวลผลซึ่งมี ไอซี LM393 เป็นส่วนประกอบ
+                                </li>
+                                <li class="list-group-item">
+                                    2. แผ่น PCB หรือ แท่งอิเล็กโทรด สำหรับเสียบลงดิน
+                                </li>
+                                <li class="list-group-item">
+                                    soil moisture sensor เป็นเซนเซอร์ที่สามารถวัดค่าความชื้นและแสดงผลออกมาได้ 2 รูปแบบ คือ
+                                </li>
+                                <li class="list-group-item">
+                                    1. อ่านค่าแบบ Analog คืออ่านค่าความชื่นและให้ค่าตั้งแต่ 0 ถึง 1024 ถ้าดินแห้ง มีความชื้นน้อย ค่าที่วัดได้จะมีค่ามาก แต่ถ้าดินมีความชื้นมาก ค่าที่วัดได้จะมีค่าน้อย
+                                </li>
+                                <li class="list-group-item">
+                                    2. อ่านค่าแบบ Digital คือเปรียบเทียบกับค่าที่ตั้งไว้ ถ้าค่าที่วัดได้มากกว่า ให้ logic HIGH ถ้าต่ำกว่าให้ logic LOW
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-green mb-3" id="relay">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>Relay 5V</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/5v-one-channel-relay.jpg" width="300" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Relay คือ electronic switch ชนิดหนึ่ง ซึ่งทำหน้าที่ควบคุมวงจรอิเล็กทรอนิกส์ จ่ายไฟให้กับอุปกรณ์ที่ถูกเชื่อมต่ออยู่ จุดต่อใช้งานมาตรฐาน ประกอบด้วย
+                                </li>
+                                <li class="list-group-item">
+                                    1. จุดต่อ NC ย่อมาจาก normal close หมายความว่าปกติดปิด หรือ หากยังไม่จ่ายไฟให้ขดลวดเหนี่ยวนำหน้าสัมผัสจะติดกัน โดยทั่วไปเรามักต่อจุดนี้เข้ากับอุปกรณ์ที่ต้องการให้ทำงานตลอดเวลา
+                                </li>
+                                <li class="list-group-item">
+                                    2. จุดต่อ NO ย่อมาจาก normal open หมายความว่าปกติเปิด หรือหากยังไม่จ่ายไฟให้ขดลวดเหนี่ยวนำหน้าสัมผัสจะไม่ติดกัน โดยทั่วไปเรามักต่อจุดนี้เข้ากับอุปกรณ์ที่ต้องการควบคุมการเปิดปิด
+                                </li>
+                                <li class="list-group-item">
+                                    3. จุดต่อ C ย่อมากจาก common คือจุดร่วมที่ต่อมาจากแหล่งจ่ายไฟ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="card border-green mb-3" id="proto">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>โปรโตบอร์ด</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/pn38ck.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    บอร์ดที่มีไว้เพื่อเชื่อมต่อวงจรอิเล็กทรอนิกส์ โดยมีลักษณะเป็นแผ่นพลาสติก มีรูอยู่จำนวนมาก ภายในรูมีตัวนำไฟฟ้าซึ่งเชื่อมต่อกันอยู่
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="batt">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>ถ่าน 9V</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/9.ถ่าน-Panasinic-9V-Neo.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    สำหรับจ่ายไฟให้กับปั้มน้ำ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="tape">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>เทปพันสายไฟ</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/9e775847638a1305feb239d659f1b48e.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    นำมาใช้พันตรงสายขั้วบวกของปั๊มน้ำกับสายขั้วถ่านจากถ่าน 9V เพื่อประหยัดโดยจะได้ไม่ต้องบัดกรี
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="card border-green mb-3" id="node">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>NodeMCU</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/95ffaac5-a811-4764-b724-631504e0d257.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    บอร์ดคล้าย Arduino สามารถเชื่อมต่อกับ WiFi ได้ สามารถเขียนโปรแกรมด้วย Arduino IDE เช่นเดียวกับ Arduino บอร์ดมีราคาค่อนข้างถูก
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="pole">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>ขั้วถ่าน 9V</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/da6duk.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    ตัวเชื่อมต่อกับถ่ายและสายไฟ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="microusb">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>Micro USB Data Cable</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/Micro-USB-Data-Cable-For-Nokia-CA.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    ใช้ในการเชื่อมต่อ NodeMCU เข้ากับเครื่องคอมพิวเตอร์ เพื่ออัพโหลดคำสั่ง
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="card border-green mb-3" id="cable">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>สายไฟ</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/11038427_B.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    สายไฟทั่วไป มีไว้เพื่อเชื่อมต่ออุปกรณ์ต่างๆ
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="strap">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>สายยาง</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/5ddcc35bN8f59a678.jpeg!q70.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    สำหรับทางน้ำไหล
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border-green mb-3" id="pump">
+                        <div class="card-header bg-green text-white text-center">
+                            <h4>ปั๊มน้ำ DC 5V</h4>
+                        </div>
+                        <div class="card-body text-green">
+                            <div class="text-center">
+                                <img class="img-fluid" src="photo/material/Mini-DC3-5V-100L-H-Aquarium.jpg_.jpg" width="400" id="pic2">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    ปั๊มน้ำขนาดเล็กที่ใช้มอเตอร์ขนาด 5V ในการสูบน้ำขึ้นทางท่อยางไปยังภาชนะอื่น โดยการนำตัวปั๊มจุ่มลงไปในน้ำเพื่อสูบน้ำขึ้นมาใช้งานต่อไป
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer-->
+        <div class="row box">
+            <div class="col-md-6 col-12">
+                <a href="index.html" class="text-decoration-none">
+                    <p id="subtitle" style="color: #202224;">Self Watering System</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-12">
+                <p id="detail" class="text-right">CORE DUMP<br>2/2020 Final Project<br>Computer Programming</p>
+            </div>
+        </div>
+        <!-- End Footer-->
+
+
+    </div>
+</body>
+
+</html>

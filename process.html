@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Self Watering System | หลักการทำงาน</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300;400;500;600&family=Source+Code+Pro:wght@500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="menu">
+            <a href="index.html" class="text-decoration-none">
+                <p id="undertopic">Self Watering System</p>
+            </a>
+        </div>
+        <div class="row">
+            <h1 class="topicpage"># หลักการทำงาน</h1><br>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7 col-12">
+                <h4 class="topic" style="padding-left: 5vh; margin-top: 3vh; font-weight: 400;">Self Watering</h4>
+                <h4 class="topic" style="padding-left: 5vh; font-weight: 400;">Self Watering with LINE Notification</h4>
+                <div class="pad">
+                    <hr class="line4"><br><br>
+                    <h2 class="topic">ภาพจำลองการต่อวงจร</h2>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="text-center ">
+                    <img class="img-fluid " src="photo/diagram.png " id="pic2 " width="80%"><br>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-7 col-12" id="selfw">
+                <div class="pad">
+                    <h2 class="topic">Self Watering</h2>
+                    <p class="format text-justify">เมื่อ Soil Moisture Sensor วัดความชื้นและประมวลผลโดยโมดูลประมวลผล ค่าที่ได้ซึ่งเป็นค่าแบบ Analog จะถูกส่งเข้ามายังคอมพิวเตอร์เพื่อทำการเปรียบเทียบ หากค่าความชื้นที่วัดได้สูงกว่า 750 หมายความว่าดินแห้ง Relay จะมีค่าเป็น LOW ทำให้วงจรปิดและปั๊มน้ำทำงาน
+                        เมื่อค่าความชื้นลดลงต่ำกว่า 750 หมายความว่าดินชื้น Relay จะมีค่าเป็น HIGH ทำให้วงจรเปิดและปั๊มหยุดน้ำทำงาน</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="pad" style="margin-top: 5vh;">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card border-white mb-3 ">
+                                <img class="img-fluid " src="photo/preview.png">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card border-white mb-3 ">
+                                <img class="img-fluid " src="photo/66873.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-12" id="selfwline">
+                <div class="pad" style="margin-top: 8vh;">
+                    <h2 class="topic">Self Watering with LINE Notification</h2>
+                    <p class="format text-justify">เมื่อ Soil Moisture Sensor วัดความชื้นและประมวลผลโดยโมดูลประมวลผล ค่าที่ได้ซึ่งเป็นค่าแบบ Analog จะถูกส่งเข้ามายังคอมพิวเตอร์เพื่อทำการเปรียบเทียบ หากค่าความชื้นที่วัดได้สูงกว่า 750 Line Notification จะทำการแจ้งเตือนว่าดินแห้ง Relay
+                        จะมีค่าเป็น LOW ทำให้วงจรปิดและปั๊มน้ำทำงาน เมื่อค่าความชื้นลดลงต่ำกว่า 750 หมายความว่าดินชื้น Relay จะมีค่าเป็น HIGH ทำให้วงจรเปิดและปั๊มหยุดน้ำทำงาน Notification จะทำการแจ้งเตือนว่าดินชื้นแล้ว</p><br>
+                    <img class="img-fluid " src="photo/line-dec.png">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Footer-->
+        <div class="row box ">
+            <div class="col-md-6 col-12 ">
+                <a href="index.html" class="text-decoration-none">
+                    <p id="subtitle" style="color: #202224;">Self Watering System</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-12 ">
+                <p id="detail " class="text-right ">CORE DUMP<br>2/2020 Final Project<br>Computer Programming</p>
+            </div>
+        </div>
+        <!-- End Footer-->
+
+
+    </div>
+</body>
+
+</html>
