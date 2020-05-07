@@ -1,6 +1,6 @@
 ﻿# Self Watering System
 
-Let's go to our GitHub Page : [https://mllalli.github.io/CP62/](https://mllalli.github.io/CP62/)
+วิดีโอสาธิต : [https://youtu.be/e3nabCGN2oc](https://youtu.be/e3nabCGN2oc)
 
 อุปกรณ์รดน้ำต้นไม้ขนาดเล็กที่ทำงานเมื่อความชื้นในดินต่ำกว่าที่กำหนดไว้ เเล้วจะทำการวิเคราะห์เพื่อรดน้ำให้ต้นไม้ได้อัตโนมัติ สามารถนำมาต่อยอดไปเป็นเครื่องที่ใหญ่กว่าเพื่อต้นไม้ขนาดที่ใหญ่กว่าได้
 
