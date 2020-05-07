@@ -23,12 +23,12 @@
                 <a href="#topic2" id="menulist2" class="menulist"># ข้อจำกัด</a><br>
                 <a href="#topic3" id="menulist3" class="menulist"># อุปกรณ์</a><br>
                 <a href="#topic4" id="menulist4" class="menulist"># หลักการทำงาน</a><br>
-                <a href="https://github.com/MllAlli/CP62" class="menulist" target="_blank" id="menulist1"># ดูบน GitHub</a><br>
-                <a href="https://github.com/MllAlli/CP62/archive/master.zip" id="menulist2" class="menulist"># ดาวน์โหลด.zip</a><br>
+                <a href="#topic5" class="menulist" id="menulist1"># Source Code</a><br>
+                <a href="https://github.com/MllAlli/CP62" id="menulist2" class="menulist"># ดูบน GitHub</a><br>
             </div>
             <div class="col-12 col-md-10 text-center" style="margin-bottom: 0vh;">
                 <div class="iframe-container">
-                    <iframe src="https://www.youtube.com/embed/e3nabCGN2oc" margin=”auto” allowfullscreen width="850" height="400"></iframe>
+                    <iframe src="https://www.youtube.com/embed/e3nabCGN2oc" margin=”auto” allowfullscreen width="90%" height="90%"></iframe>
                 </div>
             </div>
         </div>
@@ -129,19 +129,19 @@
                                 </div>
                                 <div class="card-body text-purple">
                                     <div class="text-center" style="padding: 5vh;">
-                                        <img class="img-fluid rounded-circle" src="photo/plant.png" width="500" id="pic2">
+                                        <img class="img-fluid rounded-circle" src="photo/plant.png" width="100%" id="pic2">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div class="card border-purple mb-3" style="width: 100%;">
+                            <div class="card border-purple mb-3">
                                 <div class="card-header bg-purple text-white text-center">
                                     <h4>ต้องเชื่อมต่อไฟฟ้าอยู่ตลอดเวลา</h4>
                                 </div>
                                 <div class="card-body text-danger">
                                     <div class="text-center" style="padding: 3vh;">
-                                        <img class="img-fluid rounded-circle" src="photo/plug.png" width="500" id="pic2">
+                                        <img class="img-fluid rounded-circle" src="photo/plug.png" width="100%" id="pic2">
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                                     </div>
                                     <div class="card-body text-blue">
                                         <div class="text-center">
-                                            <img class="img-fluid" src="photo/plant1.png" width="400" id="pic2">
+                                            <img class="img-fluid" src="photo/plant1.png" width="100%" id="pic2">
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +254,7 @@
                                     </div>
                                     <div class="card-body text-blue">
                                         <div class="text-center">
-                                            <img class="img-fluid" src="photo/plant2.png" width="400" id="pic2">
+                                            <img class="img-fluid" src="photo/plant2.png" width="100%" id="pic2">
                                         </div>
                                     </div>
                                 </div>
@@ -274,9 +274,140 @@
                         </div>
                     </div>
                 </div>
+                <hr class="line5">
             </div>
         </div>
         <!-- End Topic #4-->
+
+
+        <!--Topic #5-->
+        <div class="row">
+            <div class="col-md-2 col-12"></div>
+            <div class="col-12 col-md-10">
+                <div class="box">
+                    <a href="#topic5" class="text-decoration-none">
+                        <h1 class="topic" id="topic5"># Source Code</h1>
+                    </a>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div style="background-color: #F7F7F9;">
+                                <h4 class="bg-orange text-white text-center" style="padding: 15px 0px;">Self Watering</h4>
+                                <div class="container-fluid mb-5">
+                                    <div class="row">
+                                        <code style="color: #202224; font-size: small;">
+                                                int val = 0; <br><br>
+                                                void setup() { <br>
+                                                    &emsp; Serial.begin(9600); <br>
+                                                } <br><br>
+                                                void loop() { <br>
+                                                    &emsp; val = analogRead(A0); <br>
+                                                    &emsp; Serial.println(val); <br>
+                                                    &emsp; delay(1000); <br>
+                                                }
+                                    </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div style="background-color: #F7F7F9;">
+                                <h4 class="bg-orange text-white text-center" style="padding: 15px 0px;">Self Watering with LINE</h4>
+                                <div class="container-fluid mb-2">
+                                    <div class="row">
+                                        <code style="color: #202224; font-size: small;">
+                                            #include &lt;ESP8266WiFi.h> <br>
+                                                const char* ssid = "33_wifi 2.4G"; <br> 
+                                                const char* password = "0819630391"; <br>
+                                                int value1 = analogRead(A0); //sensorValue <br>
+                                                //int value2 = digitalRead(D1); <br> <br>
+                                                
+                                                void setup() { <br>
+                                                    &emsp;    Serial.begin(9600); <br>
+                                                    &emsp; delay(10); <br>
+                                                    &emsp; // Connect to WiFi network <br>
+                                                    &emsp; Serial.println(); <br>
+                                                    &emsp; Serial.println(); <br>
+                                                    &emsp; Serial.print("Connecting to "); <br>
+                                                    &emsp; Serial.println(ssid); <br>
+                                                    &emsp; WiFi.begin(ssid, password); <br>
+                                                    &emsp; while (WiFi.status() != WL_CONNECTED) <br>
+                                                    &emsp;&emsp; { <br>
+                                                        &emsp;&emsp;&emsp; delay(500); <br>
+                                                        &emsp;&emsp;&emsp; Serial.print("."); <br>
+                                                        &emsp;&emsp; } <br>
+                                                        &emsp; Serial.println("");<br>
+                                                        &emsp; Serial.println("WiFi connected");<br>
+                                                        &emsp; // Print the IP address<br>
+                                                        &emsp; Serial.print("IP=");<br>
+                                                        &emsp; Serial.println(WiFi.localIP());<br>
+                                                }<br><br>
+                                                void loop() {<br>
+                                                    &emsp; value1 = analogRead(A0);<br>
+                                                    &emsp; //value2 = digitalRead(D1);<br>
+                                                    &emsp; if(value1 < 750){<br>
+                                                        &emsp; &emsp; Serial.println(String(value1)); <br>
+                                                        &emsp; &emsp; Line_Notify(String(value1), "Your plant is fresh!");<br>
+                                                        &emsp; }else if (value1 > 750){<br>
+                                                            &emsp; &emsp; Line_Notify(String(value1), "Your plant is thirsty!");<br>
+                                                            &emsp;  }<br>
+                                                    
+                                                            &emsp; delay(5000);<br>
+                                                }<br><br>
+                                                
+                                                const char* host = "maker.ifttt.com";<br>
+                                                const char *privateKey = "dvIJUSH8hN2tIJxKxDq76K"; //แก้ เป็น key ของตัวเอง<br>
+                                                const char *event = "plant"; // แก้เป็น event ของตัวเอง<br><br>
+                                                
+                                                void Line_Notify(String value1, String value2) {<br>
+                                                    &emsp; WiFiClientSecure client;<br>
+                                                    &emsp; client.setInsecure();<br>
+                                                    &emsp; const int httpPort = 443;<br>
+                                                    &emsp; if (!client.connect(host, httpPort)) {<br>
+                                                        &emsp; &emsp; Serial.println("connection failed");<br>
+                                                        &emsp; &emsp; return;<br>
+                                                        &emsp; }<br>
+                                                        &emsp; // We now create a URI for the request<br>
+                                                        &emsp; String url = "/trigger/";<br>
+                                                        &emsp; url += event;<br>
+                                                        &emsp; url += "/with/key/";<br>
+                                                        &emsp; url += privateKey;<br>
+                                                        &emsp; String message = "value1=" + String(value1)+ "&" +
+                                                                    "value2=" + String(value2); <br>
+                                                                    &emsp; client.print(String("POST ") + url + " HTTP/1.1\r\n" + <br>
+                                                                    &emsp; "Host: " + host + "\r\n" + <br>
+                                                                    &emsp; "Content-Type: application/x-www-form-urlencoded\r\n" + <br>
+                                                                    &emsp; "Content-Length: " + message.length() + "\r\n\r\n" + <br>
+                                                                    &emsp; message + "\r\n"); <br>
+                                                                    &emsp; while (client.connected()) <br>
+                                                                    &emsp; { <br>
+                                                                        &emsp; &emsp; if (client.available()) <br>
+                                                                        &emsp; &emsp; &emsp;  { <br>
+                                                                            &emsp; &emsp; &emsp; &emsp; String line = client.readStringUntil('\r'); <br>
+                                                                            &emsp; &emsp; &emsp; &emsp; Serial.print(line); <br>
+                                                                            &emsp; &emsp; &emsp; } else { <br>
+                                                                            &emsp; &emsp; &emsp; &emsp; delay(50); <br>
+                                                                            &emsp; &emsp; &emsp; }; <br>
+                                                                            &emsp; &emsp; } <br>
+                                                                            &emsp; }
+                                        </code>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#menu" class="text-decoration-none mainmenu">
+                        <p id="menu1">MAIN MENU</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Topic #5-->
 
 
         <!-- Footer-->

@@ -41,6 +41,10 @@ hr.line4 {
     border-top: 2px solid #7FB6A1;
 }
 
+hr.line5 {
+    border-top: 2px solid #55D9D6;
+}
+
 .topic {
     font-family: 'Pridi', serif;
     font-weight: 600;
@@ -70,6 +74,10 @@ hr.line4 {
 
 #topic4:hover {
     color: #55D9D6;
+}
+
+#topic5:hover {
+    color: #FB836B;
 }
 
 p#maintopic {
